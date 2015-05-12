@@ -1,4 +1,4 @@
-package com.arithmetic.graph;
+﻿package com.arithmetic.graph;
 
 public class Graph {
 
@@ -21,6 +21,11 @@ public class Graph {
 	 * 元素个数
 	 */
 	private Integer vertexNum;
+	
+	/**
+	 * 广度优先搜索使用的队列
+	 */
+	private MyQueue<Integer> queue;
 
 	/*
 	 * 初始化
@@ -38,6 +43,7 @@ public class Graph {
 
 		stack = new MyStack();
 		vertexNum = 0;
+		queue = new MyQueue<Integer>();
 	}
 
 	/*
@@ -59,9 +65,30 @@ public class Graph {
 			}
 		}
 	}
+	
+	/*
+	 * 广度优先搜索
+	 */
+	public void bfs() {
+		
+		Integer p = 0;
+		Integer temp = null;
+
+		visitVertexQueue(0);
+		
+		while (!queue.isEmpty()) {
+			
+			temp = queue.poll();
+			
+			while(null != (
+					p = getAdjacentUnvisitedVertex(temp))) {
+				visitVertexQueue(p);
+			}
+		}
+	}
 
 	/*
-	 * 访问顶点
+	 * 访问顶点, 并放入到栈中
 	 */
 	public void visitVertex(Integer vertexIndex) {
 
@@ -69,6 +96,18 @@ public class Graph {
 		vertexs[vertexIndex].setHasVisited(true);
 		stack.push(vertexIndex);
 	}
+	
+	/*
+	 * 访问顶点, 并放入到队列中
+	 */
+	public void visitVertexQueue(Integer vertexIndex) {
+		
+		System.out.println(vertexs[vertexIndex].getData());
+		vertexs[vertexIndex].setHasVisited(true);
+		queue.add(vertexIndex);
+	}
+	
+	
 
 	/*
 	 * 获得相邻, 未访问的顶点
