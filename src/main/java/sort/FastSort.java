@@ -1,12 +1,12 @@
-package com.arithmetic;
+package sort;
 
 import java.util.Arrays;
 
 public class FastSort {
+
 	/**
 	 * 快速排序
 	 */
-
 	public static void main(String[] args) {
 		int[] arr = new int[] { 6, 1, 2, 7, 9, 3, 4, 5, 10, 8 };
 
@@ -69,5 +69,4 @@ public class FastSort {
 		arr[index1] = arr[index2];
 		arr[index2] = temp;
 	}
-
 }

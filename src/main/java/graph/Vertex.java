@@ -1,4 +1,5 @@
-package com.arithmetic.graph;
+package graph;
+
 
 public class Vertex {
 
@@ -27,5 +28,4 @@ public class Vertex {
 	public void setHasVisited(boolean hasVisited) {
 		this.hasVisited = hasVisited;
 	}
-
 }

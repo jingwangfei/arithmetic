@@ -1,11 +1,10 @@
-package com.arithmetic.graph;
+package graph;
 
 public class MyStack {
 
 	/**
 	 * 自定义栈
 	 */
-
 	private Integer[] elementDatas; // 元素数组
 
 	public static final Integer MAX_SIZE = 20; // 最大大小
@@ -76,5 +75,4 @@ public class MyStack {
 	public void setTop(Integer top) {
 		this.top = top;
 	}
-
 }
