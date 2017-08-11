@@ -2,7 +2,10 @@ package sort;
 
 import java.util.Arrays;
 
-public class FastSort {
+/**
+ *  交换排序之, 快速排序
+ **/
+public class SwapSort_Fast {
 
 	/**
 	 * 快速排序
