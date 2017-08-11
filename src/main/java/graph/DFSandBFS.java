@@ -1,10 +1,9 @@
 package graph;
 
+/**
+ * 深度优先搜索 和 广度优先搜索
+ */
 public class DFSandBFS {
-
-    /**
-     * 深度优先搜索 和 广度优先搜索
-     */
 
 	/*
 	 * 		1
