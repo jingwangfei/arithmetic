@@ -1,4 +1,4 @@
-package sort;
+package arithmetic.sort;
 
 import java.rmi.dgc.Lease;
 import java.util.Arrays;

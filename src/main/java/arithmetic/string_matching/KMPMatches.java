@@ -1,4 +1,4 @@
-package strMatching;
+package arithmetic.string_matching;
 
 /**
  *

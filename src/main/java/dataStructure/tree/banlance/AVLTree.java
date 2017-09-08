@@ -1,4 +1,4 @@
-package dataStructure.tree;
+package dataStructure.tree.banlance;
 
 /**
  *

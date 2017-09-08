@@ -1,4 +1,4 @@
-package graph;
+package arithmetic.graph;
 
 
 public class MyQueue<T> {
