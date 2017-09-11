@@ -1,5 +1,7 @@
 package java_knowledge.thread.concurrent_collection;
 
+import java.util.concurrent.BlockingQueue;
+
 /**
  * ${DESCRIPTION}
  *
@@ -11,6 +13,7 @@ public class BlockingQueueTest {
     public static void main(String[] args) {
 
 
+        BlockingQueue blockingQueue = null;
 
     }
 }
